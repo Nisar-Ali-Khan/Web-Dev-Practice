@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+}
+.post {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: blanchedalmond;
+}
+.user {
+    font-style: italic;
+}
