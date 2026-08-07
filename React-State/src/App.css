@@ -182,3 +182,118 @@
     border-right-color: var(--border);
   }
 }
+
+/* Component styles added for LikeButton, Counter, and TodoList */
+.like-wrapper {
+  margin: 12px 0;
+}
+
+.like-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.like-button .heart {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.like-button.liked {
+  background: var(--accent-bg);
+  color: var(--accent);
+  box-shadow: var(--shadow);
+  border-color: var(--accent-border);
+  transform: translateY(-1px);
+}
+
+.counter {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+}
+
+.counter-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: var(--accent-bg);
+  color: var(--text-h);
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.todo-list {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--bg), rgba(0, 0, 0, 0.02));
+}
+
+.todo-list input[type="text"], .todo-list input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.todo-list button {
+  margin-left: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.todo-list li .actions button {
+  margin-left: 8px;
+}

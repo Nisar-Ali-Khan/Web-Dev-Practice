@@ -1,27 +1,23 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
 export default function LikeButton() {
-    const [likes, setLikes] = useState(false);
+    const [isLiked, setIsLiked] = useState(false)
 
-    let toggleLike = () => {
-        let newVal = !isLiked;
-        setIsLiked(!isLiked);
-    }
-
-    let clicked = () => {
-        console.log("clicked");
-        setLikes(!likes);
-    };
-
+    const toggleLike = () => setIsLiked((v) => !v)
 
     return (
-        <div>
-            <p onClick={toggleLike}>Like
-                {isLiked ? (
-                 <i class="fa-solid fa-heart" > </i>
-                ) : (
-                 <i class="fa-regular fa-heart" ></i>)}
-            </p>
+        <div className="like-wrapper">
+            <button
+                type="button"
+                className={`like-button ${isLiked ? 'liked' : ''}`}
+                onClick={toggleLike}
+                aria-pressed={isLiked}
+            >
+                <span className="heart" aria-hidden>
+                    {isLiked ? '❤️' : '🤍'}
+                </span>
+                <span className="label">{isLiked ? 'Liked' : 'Like'}</span>
+            </button>
         </div>
-    );
+    )
 }

@@ -2,6 +2,9 @@
   "name": "react-state",
   "private": true,
   "version": "0.0.0",
+  "description": "Small collection of React state pattern examples built with Vite.",
+  "author": "Your Name",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

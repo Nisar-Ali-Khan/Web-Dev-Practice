@@ -1,16 +1,60 @@
-# React + Vite
+# React State Examples
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A small, professional demo repository showcasing common React state patterns built with Vite. The project contains compact, focused examples intended for learning and quick prototyping.
 
-Currently, two official plugins are available:
+Key components:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `Counter.jsx` — simple stateful counter with increment/decrement.
+- `LikeButton.jsx` — toggle-style button demonstrating local state and UI feedback.
+- `TodoList.jsx` — basic todo list with add/remove functionality.
+- `LudoBoard.jsx` — illustrative board component (UI-focused example).
 
-## React Compiler
+Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Minimal Vite + React setup for fast iteration.
+- Clear examples that illustrate component state and event handling.
+- Ready-to-run with `npm` or `pnpm`.
 
-## Expanding the Oxlint configuration
+Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Prerequisites: Node.js 18+ (or a modern LTS), and a package manager (`npm`, `pnpm`, or `yarn`).
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Available scripts
+
+- `dev` — starts Vite dev server
+- `build` — builds production assets
+- `preview` — locally preview the production build
+- `lint` — runs Oxlint (if configured)
+
+Project structure
+
+- `index.html` — application entry
+- `src/main.jsx` — app bootstrap
+- `src/App.jsx` — main app layout
+- `src/*.jsx` — example components (Counter, LikeButton, TodoList, LudoBoard)
+
+Contribution
+
+Contributions and improvements are welcome. Open an issue or submit a pull request with a clear description and example.
+
+License
+
+This repository is provided under the MIT license. Replace or update the license as needed for your project.
