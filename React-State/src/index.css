@@ -30,6 +30,16 @@
   }
 }
 
+/* Improve base typography and page background */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(180deg, #faf9ff 0%, #f5f7fb 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -64,6 +74,15 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+/* page container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 48px 20px;
 }
 
 h1,

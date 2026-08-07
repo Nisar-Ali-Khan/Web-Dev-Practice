@@ -297,3 +297,70 @@
 .todo-list li .actions button {
   margin-left: 8px;
 }
+
+/* Additional todo-list improvements */
+.todo-input-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-input {
+  flex: 1 1 420px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 6px rgba(16,24,40,0.04);
+}
+
+.todo-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.task-list {
+  margin-top: 12px;
+}
+
+.task-item {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 4px 10px rgba(16,24,40,0.03);
+  margin-bottom: 8px;
+}
+
+.task-item.done .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.task-text {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.task-edit-input {
+  flex: 1 1 auto;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
