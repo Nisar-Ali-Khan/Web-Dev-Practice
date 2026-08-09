@@ -5,9 +5,7 @@ import Ticket from './TicketNum'
 function App() {
   return (
     <>
-      <Ticket num={[4, 2, 9]} />
-      {/* <TicketNum num={4} />
-      <TicketNum num={2} /> */}
+      <Lottery n={3} winningSum={15} />
     </>
   )
 }
